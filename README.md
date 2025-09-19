@@ -7,3 +7,10 @@ Two commands to start creating react app
 2. npm create vite@latest
 - > Vite is a bundler 
 - > When this command is executed node modules folder will not be seen and is later installed after running npm i or npm install
+
+Day 2: Learnings 
+- > React can have .js files where as Vite restricts to use .jsx
+- > .js files are standard JavaScript files and can contain any JavaScript code. .jsx files are also JavaScript files, but they specifically allow JSX syntax, which looks like HTML and is used in React to describe UI components. Using .jsx makes it clear that the file contains JSX code, while .js is for regular JavaScript. Both can be used in React projects, but .jsx is preferred for files with JSX syntax. 
+- > You can use Fragment tags to render multiple elements in both Vite and React projects.
+In React, a Fragment lets you group multiple elements without adding extra nodes to the DOM. You can use it as <React.Fragment>...</React.Fragment> or simply <>...</> (the shorthand).
+This works the same way in any React project, including those created with Vite.
