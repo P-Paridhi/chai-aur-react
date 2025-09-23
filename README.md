@@ -14,3 +14,7 @@ Day 2: Learnings
 - > You can use Fragment tags to render multiple elements in both Vite and React projects.
 In React, a Fragment lets you group multiple elements without adding extra nodes to the DOM. You can use it as <React.Fragment>...</React.Fragment> or simply <>...</> (the shorthand).
 This works the same way in any React project, including those created with Vite.
+
+Day 3: 
+- > You cannot use JavaScript syntax while returning but can always pass Evalutated Expression. 
+- > javaScript cannot be passed because at the end of the day it gets converted into and object and object does not have code that needs to be evaluated at runtime. 
