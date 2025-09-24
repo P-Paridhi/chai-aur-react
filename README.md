@@ -18,3 +18,31 @@ This works the same way in any React project, including those created with Vite.
 Day 3: 
 - > You cannot use JavaScript syntax while returning but can always pass Evalutated Expression. 
 - > javaScript cannot be passed because at the end of the day it gets converted into and object and object does not have code that needs to be evaluated at runtime. 
+
+Day 4: 
+
+- > React useState and Counter Project Notes
+
+- > Introduction to useState:
+	 - useState is a React hook for managing state in functional components.
+	 - Import it from React: `import { useState } from 'react'`.
+
+- > useState returns an array:
+	 - The first element is the current state value.
+	 - The second element is a function to update that state.
+	 - Example: `const [count, setCount] = useState(0);`
+
+- > Updating state:
+	 - Use the setter function (e.g., setCount) to update the value.
+	 - React will re-render the component when state changes.
+
+- > Using evaluated expressions in JSX:
+	 - You can use curly braces `{}` to embed JavaScript expressions inside JSX.
+	 - Example: `<h2>Counter Value: {count}</h2>`
+
+- > Restricting counter values:
+	 - Add logic to prevent the counter from going below 0 or above 20.
+
+- > Issues and solutions:
+	 - State updates are asynchronous; use the setter function for reliable updates.
+	 - Always use conditional checks to avoid invalid state values.
