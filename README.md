@@ -46,3 +46,33 @@ Day 4:
 - > Issues and solutions:
 	 - State updates are asynchronous; use the setter function for reliable updates.
 	 - Always use conditional checks to avoid invalid state values.
+
+Day 5: Props
+
+- > *Props*: props (short for “properties”) are a way to pass data from a parent component to a child component. Props allow components to be dynamic and reusable by providing them with different values.
+
+Props are read-only and cannot be changed by the child component. They are accessed in a component via the function parameter (usually named props).
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+// Usage:
+<Welcome name="Paridhi" />
+
+Here, "name" is a prop passed to the Welcome component.
+
+- > *React Fibre* : React Fiber is a reimplementation of React’s core algorithm, designed to improve how React handles rendering, especially for animations, layouts, and gestures.
+Its main feature is incremental rendering: breaking rendering work into small units that can be paused, resumed, or aborted, and spread over multiple frames.
+Fiber enables React to assign priorities to different updates, pause or reuse work, and handle concurrency.
+The architecture separates reconciliation (figuring out what changed) from rendering (updating the UI), allowing React to optimize updates and support multiple rendering targets (like DOM and React Native).
+A “fiber” is a JavaScript object representing a unit of work, similar to a virtual stack frame. Each fiber contains information about a component, its input, output, and priority.
+This system allows React to schedule, prioritize, and manage updates more efficiently, leading to smoother user interfaces and better performance, especially for complex apps.
+(to learn in detail read: https://github.com/acdlite/react-fiber-architecture)
+
+- > *Reconciliation* : In React, reconciliation is the process of comparing the current UI tree with a new UI tree to determine what has changed. React uses this process to efficiently update the DOM by only making the minimal set of changes needed.
+When state or props change, React creates a new virtual DOM tree.
+React compares (diffs) the new tree with the previous one.
+It figures out which elements have changed, been added, or been removed.
+Only the necessary updates are applied to the real DOM.
+This makes React apps fast and efficient, even as the UI grows more complex.
+
