@@ -97,3 +97,22 @@ It figures out which elements have changed, been added, or been removed.
 Only the necessary updates are applied to the real DOM.
 This makes React apps fast and efficient, even as the UI grows more complex.
 
+Day 6: 
+1. useState
+- > useState is a React hook for adding state to functional components.
+- > You use it to keep track of:
+- > length: The desired password length.
+- > numberAllowed: Whether numbers are allowed in the password.
+- > charAllowed: Whether special characters are allowed.
+- > password: The generated password.
+2. useCallback
+- > useCallback is a React hook that memoizes a function so it only changes if its dependencies change.
+- > You use it for passwordGenerator to avoid unnecessary re-creation of the function on every render.
+3. useEffect
+- > useEffect is a React hook for running side effects in your component.
+- > Here, it runs passwordGenerator automatically whenever length, charAllowed, or numberAllowed changes, so the password updates live.
+4. useRef
+- > useRef is a React hook for creating a mutable reference that persists across renders.
+- > You use it to reference the password input field, so you can select and copy its value to the clipboard.
+5. Event Handling
+- > You use onChange and onClick handlers to update state and trigger actions when the user interacts with sliders, checkboxes, and buttons.
