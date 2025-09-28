@@ -116,3 +116,9 @@ Day 6:
 - > You use it to reference the password input field, so you can select and copy its value to the clipboard.
 5. Event Handling
 - > You use onChange and onClick handlers to update state and trigger actions when the user interacts with sliders, checkboxes, and buttons.
+
+Day 7: 
+- > built a custom hook "useCurrencyInfo", it is just like creating a function. 
+- > Used new Hook called useId.
+- > if creating components, make a index.js file and import all the components there so it is easier to import them elsewhere. 
+
