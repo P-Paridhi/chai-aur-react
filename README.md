@@ -122,3 +122,9 @@ Day 7:
 - > Used new Hook called useId.
 - > if creating components, make a index.js file and import all the components there so it is easier to import them elsewhere. 
 
+Day 8: 
+- > Use "Link" instead of <a> tag, why? because <a> tag refresh's the entire page which in turn reloads the whole tree (no point of using react then :|). 
+- > By using callback in classname we can add a variable isActive which later can be used to highlight the active tab or link etc. 
+- > what is a *router*? A router is like a traffic controller for your app. It decides which component (page) to show when the user goes to a certain URL.
+- > What is react-router-dom ? A web version of react-router. react-router = brain (logic only) react-router-dom = brain + hands (knows how to work inside a browser)
+- > In App.jsx we have <Header /> <Outlet /> <Footer /> here we knew header and footer are fixed but the middle body might change hence we used outlet.  
